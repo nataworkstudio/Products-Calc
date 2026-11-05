@@ -1,0 +1,133 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+body {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: default;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: rgb(59, 59, 59);
+    color:white;
+}
+button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width:180px;
+    background-color: rgb(10, 130, 30);
+    color:white;
+    border:none;
+    transition-duration: 0.4s;
+}
+button:hover{
+    background-color: rgb(0, 41, 77);
+}
+
+.res{
+  font-size: 2rem;
+  text-align:center;
+  vertical-align: auto;
+  color: whitesmoke;
+  padding: 1rem;
+}
+#button-group{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+#button-group div{
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+.loadFile{
+  display: none;
+}
+
+.elem{
+    display: flex;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    justify-content: center;
+    border-bottom: 1px solid rgb(75, 75, 75);
+}
+.elem2{
+    display: flex;
+    font-size: 1rem;
+    margin-right: 10px;
+    justify-content: center;
+    color: rgb(37, 157, 255);
+}
+
+.elem p{
+    min-width: 200px;
+    text-align: left;
+    max-height: 20px;
+    font-size: 1rem;
+}
+input{
+  font-size: 1rem;
+  position: relative;
+  width:100px;
+}
+.centerBox{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  position: relative;
+  width:98%;
+  height:calc( 100vh - 6rem - 4rem - 2px);
+  margin-left: 1%;
+  border: 1px solid rgb(10, 130, 30);
+  border-radius: 1rem;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  overflow-y: auto;
+}
+.prompter{
+    display:none;
+    padding: 1rem;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 1rem;
+    z-index: 1000;
+    font-size: 1.5rem;
+}
+.prompter input{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(224, 229, 235);
+}
+.prompter button{
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.prompter p{
+  padding: 0.5rem;
+}
+.prompter div{
+  display: flex;
+  flex-direction: row-reverse;
+  gap:1rem;
+  padding-top: 1rem;
+}
+#_0_01{
+    margin-top:0.5rem ;
+    width:100%;
+}
+#_0_02{
+    display: none;
+    margin-top:0.5rem ;
+    width:100%;
+}
